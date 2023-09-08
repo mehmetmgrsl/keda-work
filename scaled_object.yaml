@@ -4,7 +4,7 @@ metadata:
   name: rmq-scaledobj
 spec:
   scaleTargetRef:
-    name:           nginx-deployment                       # Mandatory. Must be in the same namespace as the ScaledObject
+     name: nginx-deployment                       # Mandatory. Must be in the same namespace as the ScaledObject
   pollingInterval:  4                                      # Optional. Default: 30 seconds
   cooldownPeriod:   10                                     # Optional. Default: 300 seconds. The amount of time (in seconds) to wait after the last event to scale down the replicas. 
   idleReplicaCount: 0                                       # Optional. Default: ignored, must be less than minReplicaCount 
