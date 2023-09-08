@@ -48,6 +48,29 @@ To Access the RabbitMQ Management interface:
 
 The user and psw are :  ```guest```
 
+2. Create an Exchange
+
+![TestExchange](create_exchange.png)
+
+
+3. Create a Queue
+
+![TestQueue](create_queue.png)
+
+4. Bind the TestQueue to TestExchange
+
+![Bind](bind.png)
+
+5. Create a KEDA Scaled Object
+
+kubectl apply -f scaled_object.yaml.yaml 
+
+6. Create a deployment
+
+kubectl apply -f nginx-deployment.yaml 
+
+Note: After running this command, there will be 2 nginx pods. However, after the cooldownPeriod of 10 seconds, the number of pods will drop to 0 because the TestQueue is empty.
+
 
 ### Resources
 1. https://keda.sh/
