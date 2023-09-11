@@ -6,6 +6,7 @@
 ### Example Use Cases
 1. KEDA can be leveraged to dynamically scale image processing pods based on messages in an Apache Kafka topic or RabbitMQ queue or AWS SQS queue.
 2. KEDA can be leveraged to dynamically scale data processing pods based on Prometheus metrics indicating memory consumption surpassing 80%.
+3. KEDA can be leveraged to dynamically scale e-commerce order processing pods based on the message backlog in an Apache Kafka topic during sales events.
 
 ### Precondition
 - K8S Cluster
