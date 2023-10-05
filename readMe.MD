@@ -2,6 +2,7 @@
 
 - To automatically scale your Kubernetes workloads based on external event metrics. It is a Kubernetes-based Event Driven Autoscaler.
 
+- When the event load is low, it can scale down your application, reducing resource consumption and costs.
 
 ### Example Use Cases
 1. KEDA can be leveraged to dynamically scale image processing pods based on messages in an Apache Kafka topic or RabbitMQ queue or AWS SQS queue.
